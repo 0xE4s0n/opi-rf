@@ -7,13 +7,13 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='rpi-rf',
+    name='opi-rf',
     version='0.9.7',
-    author='Micha LaQua',
-    author_email='micha.laqua@gmail.com',
-    description='Sending and receiving 433/315MHz signals with low-cost GPIO RF modules on a Raspberry Pi',
+    author='0xE4s0n',
+    author_email='0xE4s0n@gmail.com',
+    description='Sending and receiving 433/315MHz signals with low-cost GPIO RF modules on a Orange Pi',
     long_description=long_description,
-    url='https://github.com/milaq/rpi-rf',
+    url='https://github.com/0xE4s0n/opi-rf',
     license='BSD',
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -25,9 +25,8 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
     keywords=[
-        'rpi',
-        'raspberry',
-        'raspberry pi',
+        'opi',
+        'orange pi',
         'rf',
         'gpio',
         'radio',
@@ -36,7 +35,7 @@ setup(
         '315',
         '315mhz'
     ],
-    install_requires=['RPi.GPIO'],
-    scripts=['scripts/rpi-rf_send', 'scripts/rpi-rf_receive'],
+    install_requires=['wiringpi'],
+    scripts=['scripts/opi-rf_send', 'scripts/opi-rf_receive'],
     packages=find_packages(exclude=['contrib', 'docs', 'tests'])
 )
